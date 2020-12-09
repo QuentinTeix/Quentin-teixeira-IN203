@@ -22,6 +22,8 @@
     On obtient finalement une accélération maximale S'(n) = 7.75
 
 # Exercice 3 : Mandelbrot
-    L'idée était de ne créer qu'un seul "pixels" au niveau du pprocessus 0,
-    qui envoie le pointeur au autres processus pour que ceux ci puissent travailler directement dessus,
-    mais cela n'a pas aboutit pour le moment...
+    L'idée est de partager les lignes de l'image entre les différents processus.
+    Puis les calculs sont fait lignes par lignes et envoyé au processus principal.
+
+# Exercice 4 : Produit matrice-vecteurs
+    On a fait le découpage par colones, en faisant la somme directement lors de la reception des données par le processus principal via la commande MPI_Reduce avec l'argumnt MPI_SUM.
