@@ -2,9 +2,9 @@
 
 ## lscpu
 
-Architecture:        x86_64
-CPU op-mode(s):      32-bit, 64-bit
-Byte Order:          Little Endian
+Architecture:        x86_64;
+CPU op-mode(s):      32-bit, 64-bit;
+Byte Order:          Little Endian;
 Address sizes:       36 bits physical, 48 bits virtual
 CPU(s):              8
 On-line CPU(s) list: 0-7
