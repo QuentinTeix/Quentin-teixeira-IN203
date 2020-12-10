@@ -3,25 +3,45 @@
 ## lscpu
 
 Architecture:        x86_64
+
 CPU op-mode(s):      32-bit, 64-bit
+
 Byte Order:          Little Endian
+
 Address sizes:       36 bits physical, 48 bits virtual
+
 CPU(s):              8
+
 On-line CPU(s) list: 0-7
+
 Thread(s) per core:  2
+
 Core(s) per socket:  4
+
 Socket(s):           1
+
 Vendor ID:           GenuineIntel
+
 CPU family:          6
-Model:               158                                                                                                
+
+Model:               158    
+
 Model name:          Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+
 Stepping:            13
+
 CPU MHz:             2400.000
+
 CPU max MHz:         2400.0000
+
 BogoMIPS:            4800.00
+
 Virtualization:      VT-x
+
 Hypervisor vendor:   Windows Subsystem for Linux
+
 Virtualization type: container
+
 Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr s                     
                         se sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 s                     
                         sse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave osxsave                      
