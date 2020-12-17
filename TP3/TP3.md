@@ -1,7 +1,7 @@
 # TP3 de Quentin Teixeira
 
 ## lscpu
-'''
+```
 Architecture:        x86_64
 CPU op-mode(s):      32-bit, 64-bit
 Byte Order:          Little Endian
@@ -23,7 +23,7 @@ Virtualization:      VT-x
 Hypervisor vendor:   Windows Subsystem for Linux
 Virtualization type: container
 Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave osxsave avx f16c rdrand lahf_lm abm 3dnowprefetch fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt ibrs ibpb stibp ssbd
-'''
+```
 
 ## Produit scalaire 
 
