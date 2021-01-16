@@ -1,0 +1,38 @@
+Rapport du projet:
+
+Avant tout changement, au lancement des programmes, on a un temps de calcul de 20 ms et un temps d'affichage de 37 ms.
+Cela fait u temps de 60 ms environs pour faire une boucle
+
+Au bout d'un moment, le temps d'affichage passe subitement à 6 ms environs, puis plus aucun changement
+
+
+
+Parallélisation de boucle en mémoire partagée
+(Recouvrement calcul / affichage en mémoire partagée)
+
+
+il faut faire des sections avec le pragma !!!
+#pragma omp sections (nowait ne change rien...)
+{}
+Bon, cela n'accélère rien pour le moment though.
+
+MAIS SI !!!
+Evidement les boucle d'affichage et de calcul ne sont pas accélérées en elles mêmes, ce qui est accéléré c'est le temps total d'exécution des programmes.
+On passe en effet de 60 ms environs à simplement 41 ms (temps d'exécution du plus long des deux threads) !
+
+On n'oubliera pas de faire 'export OMP_NUM_THREADS=2;' avant de lancer './colonisation.exe' pour utiliser deux threads.
+
+DATA RACE ? A voir...
+
+
+Pour la suite:
+
+'mpiexec (-oversubscribe) -np 4 'program''
+
+MPI_Init( &nargs, &argv );
+MPI_Comm globComm;
+MPI_Comm_dup(MPI_COMM_WORLD, &globComm);
+int nbp;
+MPI_Comm_size(globComm, &nbp);
+int rank;
+MPI_Comm_rank(globComm, &rank);
